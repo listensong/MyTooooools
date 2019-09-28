@@ -1,4 +1,4 @@
-package zms.song.bore.app
+package zms.song.bore.util
 
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
