@@ -4,7 +4,7 @@ import androidx.databinding.ListChangeRegistry
 import androidx.databinding.ObservableList
 
 /**
- * @author: yisong.liao
+ * @author song
  * Time: 19-8-22 上午10:59
  * Desc: zms.song.bore.base.CoverObservableArrayList
  */

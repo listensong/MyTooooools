@@ -1,24 +1,23 @@
 package zms.song.bore.app.main
 
 import android.os.Bundle
-import android.util.Log
-import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.android.material.snackbar.Snackbar
-import androidx.core.view.GravityCompat
-import androidx.appcompat.app.ActionBarDrawerToggle
-import android.view.MenuItem
-import androidx.drawerlayout.widget.DrawerLayout
-import com.google.android.material.navigation.NavigationView
-import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
 import android.view.Menu
-import android.widget.Toast
+import android.view.MenuItem
+import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.core.view.GravityCompat
+import androidx.drawerlayout.widget.DrawerLayout
+import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.google.android.material.navigation.NavigationView
+import com.google.android.material.snackbar.Snackbar
 import zms.song.bore.app.R
 import zms.song.bore.base.CircularRevealBaseActivity
 import zms.song.bore.extend.applyAppearAnim
 import zms.song.bore.extend.setFullScreen
 import zms.song.bore.extend.setLayoutHeight
 
+/**
+ * @author song
+ */
 class WelcomeActivity : CircularRevealBaseActivity(), NavigationView.OnNavigationItemSelectedListener {
 
     private lateinit var mNavigationView: NavigationView

@@ -8,7 +8,7 @@ import androidx.lifecycle.Observer
 import java.util.concurrent.atomic.AtomicBoolean
 
 /**
- * @author: yisong.liao
+ * @author song
  * Time: 19-8-22 上午10:15
  * Desc: zms.song.bore.base.SingleLiveEvent
  */

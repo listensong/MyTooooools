@@ -11,7 +11,7 @@ import android.view.animation.DecelerateInterpolator
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 
 /**
- *
+ * @author song
  * Created by song on 2017/11/20.
  */
 

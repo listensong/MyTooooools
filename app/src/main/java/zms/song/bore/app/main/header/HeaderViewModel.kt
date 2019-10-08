@@ -1,15 +1,15 @@
 package zms.song.bore.app.main.header
 
 import androidx.databinding.ObservableField
-import androidx.lifecycle.ViewModel
 import zms.song.bore.base.IBaseResponse
+import zms.song.bore.common.base.BaseViewModel
 
 /**
- * @author: yisong.liao
+ * @author song
  * Time: 19-8-22 上午10:13
  * Desc: zms.song.bore.app.main.header.HeaderViewModel
  */
-class HeaderViewModel: ViewModel() {
+class HeaderViewModel: BaseViewModel() {
     val email: ObservableField<String> = ObservableField("")
     val model: ObservableField<String> = ObservableField("")
     val name: ObservableField<String> = ObservableField("")

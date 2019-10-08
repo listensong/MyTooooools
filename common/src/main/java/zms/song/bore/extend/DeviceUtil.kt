@@ -1,12 +1,11 @@
-package care.android.com.caretips.extend
+package zms.song.bore.extend
 
-import android.content.Context
 import android.os.Build
 import zms.song.bore.BaseApplication
 import zms.song.bore.R
 
 /**
- *
+ * @author song
  * Created by song on 2018/2/23.
  */
 object DeviceUtil {

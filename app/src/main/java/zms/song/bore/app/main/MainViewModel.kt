@@ -1,15 +1,14 @@
 package zms.song.bore.app.main
 
-import androidx.lifecycle.ViewModel
-import zms.song.bore.base.CoverObservableArrayList
 import zms.song.bore.base.SingleLiveEvent
+import zms.song.bore.common.base.BaseViewModel
 
 /**
- * @author: yisong.liao
+ * @author song
  * Time: 19-8-22 上午10:13
  * Desc: zms.song.bore.app.main.MainViewModel
  */
-class MainViewModel: ViewModel() {
+class MainViewModel: BaseViewModel() {
     private val mLiveEvent: SingleLiveEvent<Int> = SingleLiveEvent()
     //val summaries: CoverObservableArrayList<SummaryEntity> = CoverObservableArrayList()
 

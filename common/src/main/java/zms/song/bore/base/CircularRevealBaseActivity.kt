@@ -11,6 +11,7 @@ import zms.song.bore.extend.getAndroidAttrPX
 import zms.song.bore.extend.getStatusBarHeight
 
 /**
+ * @author song
  * Created by song on 2018/3/12.
  */
 abstract class CircularRevealBaseActivity :

@@ -6,7 +6,7 @@ import androidx.lifecycle.LifecycleObserver
 import androidx.lifecycle.OnLifecycleEvent
 
 /**
- * @author: yisong.liao
+ *  * @author song
  * Time: 19-8-22 下午3:36
  * Desc: zms.song.bore.base.ApplicationLifecycleObserver
  */

@@ -8,6 +8,7 @@ import android.view.animation.DecelerateInterpolator
 import kotlin.math.sqrt
 
 /**
+ * @author song
  * Created by song on 2018/3/12.
  */
 

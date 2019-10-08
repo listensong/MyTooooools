@@ -9,6 +9,9 @@ import zms.song.bore.base.BaseActivity
 import zms.song.bore.extend.getWindowMetrics
 import zms.song.bore.extend.setFullScreen
 
+/**
+ * @author song
+ */
 class LauncherActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

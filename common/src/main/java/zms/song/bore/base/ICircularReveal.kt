@@ -15,7 +15,7 @@ import zms.song.bore.extend.applyCircularReveal
 import zms.song.bore.util.UiUtil
 
 /**
- * @author: yisong.liao
+ * @author song
  * Time: 19-8-22 上午9:53
  * Desc: zms.song.bore.base.ICircularReveal
  */

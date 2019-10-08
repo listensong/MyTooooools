@@ -13,11 +13,12 @@ import zms.song.bore.base.ApplicationLifecycleObserver
 import kotlin.properties.Delegates
 
 /**
- * @author: yisong.liao
+ * @author song
  * Time: 19-8-22 上午10:27
  * Desc: zms.song.bore.BaseApplication
  */
 open class BaseApplication: Application() {
+
     companion object {
         private val TAG = BaseApplication::class.java.simpleName
 

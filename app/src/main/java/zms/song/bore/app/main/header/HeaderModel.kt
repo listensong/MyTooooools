@@ -1,10 +1,10 @@
 package zms.song.bore.app.main.header
 
-import care.android.com.caretips.extend.DeviceUtil
 import zms.song.bore.base.IBaseResponse
+import zms.song.bore.extend.DeviceUtil
 
 /**
- * @author: yisong.liao
+ * @author song
  * Time: 19-8-22 上午10:20
  * Desc: zms.song.bore.app.main.header.HeaderVO
  */

@@ -3,20 +3,17 @@ package zms.song.bore.extend
 import android.app.Activity
 import android.content.Context
 import android.content.Intent
-import android.graphics.Color
 import android.graphics.Rect
 import android.util.DisplayMetrics
 import android.util.Log
 import android.util.TypedValue
-import android.view.View
-import android.view.Window
 import android.view.WindowManager
 import android.widget.Toast
 import androidx.annotation.AttrRes
 import androidx.core.content.ContextCompat
 
 /**
- * @author: yisong.liao
+ * @author song
  * Time: 19-8-22 下午12:18
  * Desc: zms.song.bore.extend.ActivityExtend
  */

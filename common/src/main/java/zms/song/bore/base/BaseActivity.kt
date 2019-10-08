@@ -1,26 +1,16 @@
 package zms.song.bore.base
 
-import android.app.Activity
-import android.content.Context
-import android.graphics.Rect
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import android.util.DisplayMetrics
-import android.util.Log
-import android.util.TypedValue
 import android.view.MenuItem
-import android.view.Window
-import android.view.WindowManager
-import androidx.annotation.AttrRes
 import androidx.annotation.CallSuper
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
-import androidx.core.content.ContextCompat
 import zms.song.bore.R
 
 /**
- * @author: yisong.liao
+ *  @author song
  * Time: 19-8-21 下午9:14
  * Desc: zms.song.bore.app.base.BaseActivity
  */
