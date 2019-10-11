@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="zms.song.bore.app" >
+    package="zms.song.bore.app">
 
     <application
         android:name=".BoreApplication"
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
-        android:resizeableActivity="true"
         android:label="@string/app_name"
+        android:resizeableActivity="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        tools:replace="android:allowBackup" >
+        tools:replace="android:allowBackup">
 
-        <meta-data
-            android:name="android.max_aspect"
-            android:value="2.4"/>
+        <activity android:name=".base.BmobActivity">
+
+        </activity>
 
         <activity
             android:name=".main.WelcomeActivity"
             android:label="title_activity_welcome"
-            android:theme="@style/CircularRevealTheme">
+            android:theme="@style/CircularRevealWelcomeTheme">
 
         </activity>
 
@@ -31,9 +31,13 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.4" />
     </application>
 
 </manifest>

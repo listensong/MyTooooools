@@ -1,5 +1,6 @@
 package zms.song.bore.app.main
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -9,11 +10,14 @@ import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.navigation.NavigationView
 import com.google.android.material.snackbar.Snackbar
+import kotlinx.android.synthetic.main.content_welcome.*
 import zms.song.bore.app.R
+import zms.song.bore.app.base.BmobActivity
 import zms.song.bore.base.CircularRevealBaseActivity
 import zms.song.bore.extend.applyAppearAnim
 import zms.song.bore.extend.setFullScreen
 import zms.song.bore.extend.setLayoutHeight
+import zms.song.bore.extend.setLinearLayoutTopMargin
 
 /**
  * @author song
@@ -25,17 +29,15 @@ class WelcomeActivity : CircularRevealBaseActivity(), NavigationView.OnNavigatio
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        window?.setFullScreen()
         setContentView(R.layout.activity_welcome)
+        setActionBar()
+        updateTitle("HelloWorldTitle")
 
         mAppBar = findViewById(R.id.app_bar_layout)
-        mAppBar?.let {
-            it.setLayoutHeight(mActionLayoutHeight)
-            it.translationY = (-mActionLayoutHeight).toFloat()
-        }
-
-        mToolbar = findViewById(R.id.toolbar)
-        setSupportActionBar(mToolbar)
+//        mAppBar?.let {
+//            it.setLayoutHeight(mActionLayoutHeight)
+//            it.translationY = (-mActionLayoutHeight).toFloat()
+//        }
 
         val fab: FloatingActionButton = findViewById(R.id.fab)
         fab.setOnClickListener { view ->
@@ -67,7 +69,11 @@ class WelcomeActivity : CircularRevealBaseActivity(), NavigationView.OnNavigatio
             finish()
         }
         setCircularRevealShowEndAction {
-            applyToolbarAnim()
+            //applyToolbarAnim()
+        }
+
+        testImage.setOnClickListener { v ->
+            startActivity(Intent(this, BmobActivity::class.java))
         }
     }
 

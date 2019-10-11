@@ -4,9 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@null"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="@color/browser_actions_divider_color"
     tools:context=".main.WelcomeActivity"
     tools:showIn="@layout/app_bar_welcome">
+
+    <TextView
+        android:id="@+id/testImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="测试过场动画"
+        android:gravity="center"
+        android:background="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+    </TextView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

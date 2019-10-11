@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewAnimationUtils
 import android.view.animation.AccelerateInterpolator
 import android.view.animation.DecelerateInterpolator
+import android.widget.LinearLayout
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 
 /**
@@ -103,6 +104,18 @@ fun View.applyCircularReveal(triggerView: View,
 fun View.setLayoutHeight(height: Int) {
     val newLayoutParams = this.layoutParams as CoordinatorLayout.LayoutParams
     newLayoutParams.height = height
+    this.layoutParams = newLayoutParams
+}
+
+fun View.setLinearLayoutHeight(height: Int) {
+    val newLayoutParams = this.layoutParams as LinearLayout.LayoutParams
+    newLayoutParams.height = height
+    this.layoutParams = newLayoutParams
+}
+
+fun View.setLinearLayoutTopMargin(topMargin: Int) {
+    val newLayoutParams = this.layoutParams as LinearLayout.LayoutParams
+    newLayoutParams.topMargin = topMargin
     this.layoutParams = newLayoutParams
 }
 

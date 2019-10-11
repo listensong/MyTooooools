@@ -1,7 +1,6 @@
 package zms.song.bore.base
 
 import android.os.Bundle
-import android.util.Log
 import android.view.MotionEvent
 import android.view.View
 import androidx.annotation.CallSuper
@@ -9,6 +8,7 @@ import zms.song.bore.TOUCH_X
 import zms.song.bore.TOUCH_Y
 import zms.song.bore.extend.getAndroidAttrPX
 import zms.song.bore.extend.getStatusBarHeight
+
 
 /**
  * @author song

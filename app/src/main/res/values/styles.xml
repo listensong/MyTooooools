@@ -14,10 +14,18 @@
         <item name="android:windowAnimationStyle">@style/NoneAnimation</item>
     </style>
 
+    <style name="CircularRevealWelcomeTheme" parent="AppTheme">
+        <item name="android:windowBackground">@color/translucent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/NoneAnimation</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
     <style name="LauncherTheme" parent="AppTheme">
         <item name="android:windowBackground">@color/translucent</item>
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowAnimationStyle">@style/NoneAnimation</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
 
     <style name="NoneAnimation">

@@ -34,15 +34,22 @@ abstract class BaseActivity : AppCompatActivity() {
     protected fun setActionBar() {
         mToolbar = findViewById(R.id.toolbar)
 
-        if (mToolbar != null) {
-            setSupportActionBar(mToolbar)
+        mToolbar?.also {
+            it.setContentInsetsAbsolute(0, 0)
+            it.contentInsetStartWithNavigation = 0
+            setSupportActionBar(it)
         }
 
         supportActionBar?.run {
             setDisplayHomeAsUpEnabled(true)
             setHomeAsUpIndicator(R.drawable.btn_back)
             setHomeActionContentDescription(resources.getString(R.string.action_bar_back_button_navi_up))
+            title = ""
         }
+    }
+
+    protected fun updateTitle(title: String) {
+        supportActionBar?.title = title
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
