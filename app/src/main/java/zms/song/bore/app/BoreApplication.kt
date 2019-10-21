@@ -1,5 +1,6 @@
 package zms.song.bore.app
 
+import androidx.annotation.CallSuper
 import zms.song.bore.BaseApplication
 
 /**
@@ -9,4 +10,8 @@ import zms.song.bore.BaseApplication
  */
 class BoreApplication : BaseApplication() {
 
+    @CallSuper
+    override fun onCreate() {
+        super.onCreate()
+    }
 }

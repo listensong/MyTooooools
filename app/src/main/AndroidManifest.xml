@@ -13,18 +13,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:allowBackup">
+        <activity android:name=".setting.SettingActivity">
 
+        </activity>
         <activity android:name=".bmob.BmobActivity">
 
         </activity>
-
         <activity
             android:name=".main.WelcomeActivity"
             android:label="title_activity_welcome"
             android:theme="@style/CircularRevealWelcomeTheme">
 
         </activity>
-
         <activity
             android:name=".LauncherActivity"
             android:screenOrientation="portrait"
@@ -36,6 +36,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <meta-data
             android:name="android.max_aspect"
             android:value="2.4" />

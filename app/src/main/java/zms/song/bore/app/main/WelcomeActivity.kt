@@ -13,8 +13,10 @@ import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.content_welcome.*
 import zms.song.bore.app.R
 import zms.song.bore.app.bmob.BmobActivity
+import zms.song.bore.app.setting.SettingActivity
 import zms.song.bore.base.CircularRevealBaseActivity
 import zms.song.bore.extend.applyAppearAnim
+import zms.song.bore.extend.startActivitySafely
 
 /**
  * @author song
@@ -115,7 +117,9 @@ class WelcomeActivity : CircularRevealBaseActivity(), NavigationView.OnNavigatio
 
             }
             R.id.nav_tools -> {
-
+                postDelayed(200) {
+                    startActivitySafely(SettingActivity::class.java)
+                }
             }
             R.id.nav_share -> {
 
