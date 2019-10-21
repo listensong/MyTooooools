@@ -12,12 +12,9 @@ import com.google.android.material.navigation.NavigationView
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.content_welcome.*
 import zms.song.bore.app.R
-import zms.song.bore.app.base.BmobActivity
+import zms.song.bore.app.bmob.BmobActivity
 import zms.song.bore.base.CircularRevealBaseActivity
 import zms.song.bore.extend.applyAppearAnim
-import zms.song.bore.extend.setFullScreen
-import zms.song.bore.extend.setLayoutHeight
-import zms.song.bore.extend.setLinearLayoutTopMargin
 
 /**
  * @author song

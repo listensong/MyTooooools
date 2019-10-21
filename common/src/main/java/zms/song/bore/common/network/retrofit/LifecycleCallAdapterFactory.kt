@@ -27,12 +27,10 @@ class LifecycleCallAdapterFactory(
         }
 
         val responseType = getParameterUpperBound(0, returnType)
-        if (context is LifecycleOwner) {
-            if (context.lifecycle is LifecycleRegistry) {
-                return ErrorHandleCallAdapter<Any>(
-                        responseType, context.lifecycle as LifecycleRegistry, enableCancel
-                )
-            }
+        if (context is LifecycleOwner && context.lifecycle is LifecycleRegistry) {
+            return ErrorHandleCallAdapter<Any>(
+                    responseType, context.lifecycle as LifecycleRegistry, enableCancel
+            )
         }
 
         return ErrorHandleCallAdapter<Any>(responseType, enableCancel = enableCancel)

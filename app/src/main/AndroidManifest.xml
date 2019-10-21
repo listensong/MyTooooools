@@ -14,7 +14,7 @@
         android:theme="@style/AppTheme"
         tools:replace="android:allowBackup">
 
-        <activity android:name=".base.BmobActivity">
+        <activity android:name=".bmob.BmobActivity">
 
         </activity>
 

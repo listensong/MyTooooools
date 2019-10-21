@@ -58,8 +58,8 @@ fun Result<ResponseBody>.handle(
 ) {
     val body = getOrNull()
     if (body == null) {
-        when {
-            this is Result.Error -> when (val result = exception) {
+        when (this) {
+            is Result.Error -> when (val result = exception) {
                 is HttpException -> {
                     handleVocHttpException(result, fail)
                 }
@@ -67,7 +67,7 @@ fun Result<ResponseBody>.handle(
                     fail(result.code(), NetworkError(response.code, "unknown exception"))
                 }
             }
-            this is Result.Exception -> when (val result = exception) {
+            is Result.Exception -> when (val result = exception) {
                 is IOException -> {
                     fail(ERROR_SERVER_IO, NetworkError(ERROR_SERVER_IO, result.message))
                 }

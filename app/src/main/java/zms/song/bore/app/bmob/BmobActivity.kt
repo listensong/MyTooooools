@@ -1,4 +1,4 @@
-package zms.song.bore.app.base
+package zms.song.bore.app.bmob
 
 import android.os.Bundle
 import zms.song.bore.app.R
