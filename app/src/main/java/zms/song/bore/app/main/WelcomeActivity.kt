@@ -15,6 +15,7 @@ import zms.song.bore.app.R
 import zms.song.bore.app.bmob.BmobActivity
 import zms.song.bore.app.setting.SettingActivity
 import zms.song.bore.base.CircularRevealBaseActivity
+import zms.song.bore.common.widget.NotificationUtil
 import zms.song.bore.extend.applyAppearAnim
 import zms.song.bore.extend.startActivitySafely
 
@@ -40,8 +41,10 @@ class WelcomeActivity : CircularRevealBaseActivity(), NavigationView.OnNavigatio
 
         val fab: FloatingActionButton = findViewById(R.id.fab)
         fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show()
+            //Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG).setAction("Action", null).show()
+            NotificationUtil
+                    .getInstance()
+                    .sendNotification(this, 0, "Title,", "Content")
         }
 
         mDrawer = findViewById(R.id.drawer_layout)

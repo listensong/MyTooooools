@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">CircularReveal-AppStartup</string>
+    <string name="app_name_alias">AppStartup</string>
     <string name="navigation_footer_left">设置</string>
     <string name="navigation_footer_right">退出</string>
 
