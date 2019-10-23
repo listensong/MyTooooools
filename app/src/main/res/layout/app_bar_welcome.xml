@@ -32,6 +32,14 @@
                 app:layout_collapseMode="parallax">
 
             </ImageView>
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/drawable_status_bar_gradient"
+                app:layout_collapseMode="pin"
+                android:fitsSystemWindows="true">
+            </View>
 
 <!--            <View-->
 <!--                android:id="@+id/mask_status_bar_view"-->
